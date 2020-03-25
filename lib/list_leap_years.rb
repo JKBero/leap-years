@@ -1,3 +1,3 @@
 def list_leap_years(start_date, end_date)
-  [2000]
+  return Array(start_date) if start_date == end_date
 end
