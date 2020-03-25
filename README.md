@@ -36,6 +36,8 @@ A simple tool that will tell you whether a year is a leap year, according to the
 
 ## I/O
 
+**leap_year?(year)**
+
 Input | Output
 ----- | ------
 2000 | true
@@ -43,3 +45,30 @@ Input | Output
 1900 | false
 1988 | true
 1500 | false
+
+**list_leap_years(start_year, end_year)**
+
+Input | Output
+----- | ------
+2000, 2000 | [2000]
+1988, 1988 | [1988]
+1500, 1500 | []
+1900, 1900 | []
+1999, 2001 | [2000]
+1900, 1950 | [1904, 1908, 1912, 1916, 1920, 1924, 1928, 1932, 1936, 1940, 1944, 1948]
+1704, 1796 | [1704, 1708, 1712, 1716, 1720, 1724, 1728, 1732, 1736, 1740, 1744, 1748, 1752, 1756, 1760, 1764, 1768, 1772, 1776, 1780, 1784, 1788, 1792, 1796]
+
+**closest_leap_year(year)**
+
+Input | Output
+----- | ------
+2000  | 2000
+1988  | 1988
+2003  | 2004
+1987  | 1988
+2001  | 2000
+2007  | 2008
+2002  | 2000
+1998  | 1996
+
+Edge case: the closest leap year in the *past* is given if the year falls equally between two leap years.

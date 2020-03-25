@@ -9,7 +9,7 @@ describe 'list_leap_years' do
     expect(list_leap_years(1988, 1988)).to eq [1988]
   end
 
-  it 'returns nil if given a non-leap year as the start and end years' do
+  it 'returns empty if given a non-leap year as the start and end years' do
     expect(list_leap_years(1500, 1500)).to eq []
     expect(list_leap_years(1900, 1900)).to eq []
   end
