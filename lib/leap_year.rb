@@ -1,3 +1,5 @@
 def leap_year?(year)
-  year % 400 == 0 ? true : false
+  return true if year % 400 == 0
+  return true if year % 4 == 0 && year % 100 != 0
+  return false
 end
